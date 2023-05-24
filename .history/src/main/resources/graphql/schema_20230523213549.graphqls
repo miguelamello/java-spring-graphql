@@ -3,24 +3,24 @@ type Meter {
   id: ID!
   name: String!
   location: String!
-  created: String!
-  updated: String!
-  readings: String!
+  readings: [Measurement!]!
+  createdAt: String!
+  updatedAt: DateTime!
 }
 
 type Measurement {
   id: ID!
-  meter: String!
+  meter: Meter!
   value: Float!
-  timestamp: String!
+  timestamp: DateTime!
 }
 
 type UsagePattern {
   id: ID!
-  meter: String!
+  meter: Meter!
   pattern: [Float!]!
-  start: String!
-  end: String!
+  startDate: Date!
+  endDate: Date!
 }
 
 type Query {

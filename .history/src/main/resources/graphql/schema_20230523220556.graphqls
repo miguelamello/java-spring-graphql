@@ -10,14 +10,14 @@ type Meter {
 
 type Measurement {
   id: ID!
-  meter: String!
+  meter: Meter!
   value: Float!
   timestamp: String!
 }
 
 type UsagePattern {
   id: ID!
-  meter: String!
+  meter: Meter!
   pattern: [Float!]!
   start: String!
   end: String!

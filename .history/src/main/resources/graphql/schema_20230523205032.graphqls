@@ -1,0 +1,10 @@
+
+type Meter {
+  id: ID!
+  name: String!
+  location: String!
+  readings: [Measurement!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+

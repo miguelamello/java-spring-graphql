@@ -1,0 +1,25 @@
+
+type Meter {
+  id: ID!
+  name: String!
+  location: String!
+  readings: [Measurement!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Measurement {
+  id: ID!
+  meter: Meter!
+  value: Float!
+  timestamp: DateTime!
+}
+
+type UsagePattern {
+  id: ID!
+  meter: Meter!
+  pattern: [Float!]!
+  startDate: Date!
+  endDate: Date!
+}
+

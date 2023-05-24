@@ -17,7 +17,7 @@ type Measurement {
 
 type UsagePattern {
   id: ID!
-  meter: String!
+  meter: Meter!
   pattern: [Float!]!
   start: String!
   end: String!
