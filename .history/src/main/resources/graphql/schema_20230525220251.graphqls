@@ -25,7 +25,7 @@ type UsagePattern {
 
 type Query {
   getMeterById(id: ID!): Meter
-  getAllMeters: [Meter]
+  getAllMeters: Meter
   getMeasurementById(id: ID!): Measurement
   getAllMeasurements: [Measurement!]!
   getUsagePatternById(id: ID!): UsagePattern

@@ -8,7 +8,6 @@ import java.util.List;
 
 @Controller
 public class MeterController {
-    
   @QueryMapping
   public Meter getMeterById(@Argument String id) {
     return Meter.getById(id);

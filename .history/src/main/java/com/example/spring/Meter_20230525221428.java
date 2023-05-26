@@ -28,6 +28,5 @@ public record Meter (
     public static List<Meter> getAll() {
       return meters;
     }
-    
 }
 

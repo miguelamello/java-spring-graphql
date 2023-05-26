@@ -25,9 +25,11 @@ public record Meter (
       .orElse(null);
     }
 
-    public static List<Meter> getAll() {
-      return meters;
+    public static Meter getById(String id) {
+      return meters.stream()
+      .filter(meter -> meter.id().equals(id))
+      .findFirst()
+      .orElse(null);
     }
-    
 }
 

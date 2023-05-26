@@ -25,9 +25,10 @@ public record Meter (
       .orElse(null);
     }
 
-    public static List<Meter> getAll() {
-      return meters;
+    public static Meter getAll() {
+      return meters.stream()
+      .findAny()
+      .orElse(null);
     }
-    
 }
 

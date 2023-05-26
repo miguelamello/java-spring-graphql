@@ -25,9 +25,8 @@ public record Meter (
       .orElse(null);
     }
 
-    public static List<Meter> getAll() {
+    public static Meter getAll() {
       return meters;
     }
-    
 }
 

@@ -8,7 +8,6 @@ import java.util.List;
 
 @Controller
 public class MeterController {
-    
   @QueryMapping
   public Meter getMeterById(@Argument String id) {
     return Meter.getById(id);
@@ -18,5 +17,9 @@ public class MeterController {
   public List<Meter> getAllMeters() {
     return Meter.getAll();
   }
-  
+
+  /*@SchemaMapping
+  public Author author(Meter meter) {
+      return Author.getById(meter.authorId());
+  }*/
 }
