@@ -21,4 +21,6 @@ type Query {
   getAllMeters: [Meter]
   getMeasurementById(id: ID!): Measurement
   getAllMeasurements: [Measurement!]!
+  getUsagePatternById(id: ID!): UsagePattern
+  getAllUsagePatterns: [UsagePattern!]!
 }

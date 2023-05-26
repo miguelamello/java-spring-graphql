@@ -16,9 +16,20 @@ type Measurement {
   meter: Meter!
 }
 
+type UsagePattern {
+  id: ID!
+  meter_id: String!
+  pattern: [String!]!
+  start: String!
+  end: String!
+  meter: Meter!
+}
+
 type Query {
   getMeterById(id: ID!): Meter
   getAllMeters: [Meter]
   getMeasurementById(id: ID!): Measurement
   getAllMeasurements: [Measurement!]!
+  getUsagePatternById(id: ID!): UsagePattern
+  getAllUsagePatterns: [UsagePattern!]!
 }
