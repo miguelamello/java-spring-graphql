@@ -19,10 +19,10 @@ public record Measurement (
       new Measurement("6", "2", "7.4 C", "2022-07-28T00:00:00Z"),
       new Measurement("7", "2", "10.5 C", "2022-03-06T00:00:00Z"),
       new Measurement("8", "3", "11.8 C", "2021-07-02T00:00:00Z"),
-      new Measurement("9", "3", "7.4 C", "2022-07-26T00:00:00Z"),
-      new Measurement("10", "3", "8.8 C", "2022-07-27T00:00:00Z"),
-      new Measurement("11", "3", "9.2 C", "2022-07-28T00:00:00Z"),
-      new Measurement("12", "3", "11.9 C", "2022-07-29T00:00:00Z")
+      new Measurement("9", "3", "7.4 C", "2022-07-28T00:00:00Z"),
+      new Measurement("10", "3", "8.8 C", "2022-07-28T00:00:00Z"),
+      new Measurement("11", "3", "9.4 C", "2022-07-28T00:00:00Z"),
+      new Measurement("12", "3", "7.4 C", "2022-07-28T00:00:00Z")
     );
 
     public static Measurement getById(String id) {
